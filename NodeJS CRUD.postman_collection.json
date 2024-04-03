@@ -1,0 +1,269 @@
+{
+  "info": {
+    "_postman_id": "b706a10b-df66-45e9-85da-5f9ea0ba23c1",
+    "name": "NodeJS CRUD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33606016"
+  },
+  "item": [
+    {
+      "name": "Product API's",
+      "item": [
+        {
+          "name": "product",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWYzZjZmZDNmZWI3MmE1NjNiOTQ3OTUiLCJpYXQiOjE3MTA0OTY3NjAsImV4cCI6MTcxMDUwMDM2MH0.rStwrX-ffykptdI5wh5vUQpkgRsAGWOz0PcgC_HHl6A",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/v1/product?limit=10&page=1&sortBy=createdAt&sort=-1",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "product"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "10"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "createdAt"
+                },
+                {
+                  "key": "sort",
+                  "value": "-1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "product",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"S23\",\n    \"description\":\"samsung\",\n    \"price\":\"34000\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/v1/product/65f2e5119424f8ce9f98ef23",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "product", "65f2e5119424f8ce9f98ef23"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "product",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWYzZjZmZDNmZWI3MmE1NjNiOTQ3OTUiLCJpYXQiOjE3MTA0OTY3NjAsImV4cCI6MTcxMDUwMDM2MH0.rStwrX-ffykptdI5wh5vUQpkgRsAGWOz0PcgC_HHl6A",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/v1/product/65f2e0b6b0be15dac9713300",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "product", "65f2e0b6b0be15dac9713300"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "product",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"S243\",\n    \"description\":\"samsung\",\n    \"price\":\"32000\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/v1/product?limit=3&page=3&sortBy=createdAt&sort=-1",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "product"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "3"
+                },
+                {
+                  "key": "page",
+                  "value": "3"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "createdAt"
+                },
+                {
+                  "key": "sort",
+                  "value": "-1"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User API's",
+      "item": [
+        {
+          "name": "user",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/v1/user?limit=10&page=1&sortBy=createdAt&sort=-1",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "user"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "10"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "createdAt"
+                },
+                {
+                  "key": "sort",
+                  "value": "-1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "user",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Ravi Kumar\",\n    \"age\":\"23\",\n    \"email\":\"ravi1235@yopmail.com\",\n    \"password\":\"Qwerty@123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/v1/signup",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "signup"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "user",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Shiv\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/v1/user/65f3eca33582055c8f8d7d17",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "user", "65f3eca33582055c8f8d7d17"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "user",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/v1/user/65f3eca33582055c8f8d7d17",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "user", "65f3eca33582055c8f8d7d17"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"ravi1235@yopmail.com\",\n    \"password\":\"Qwerty@123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/v1/user/login",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["v1", "user", "login"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
