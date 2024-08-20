@@ -1,26 +1,30 @@
 # nodejs-CRUD
+This project is designed as a demonstration of my skills in building scalable, maintainable, and efficient applications using Node.js and combined with MongoDB databases.
 
 ## What will you need
 
 - Clone this repository:
 - An IDE or text editor like VS Code
-- Node version installed above 14.17.0
+- Node version installed above 20.12.1
 - A package manager such as NPM or Yarn
+- Install MongoDB
+- Modify the .env file according to your MongoDB credentials.
 - API testing tool like Postman
-- Run the `npm start` commands
+- Import the `NodeJS CRUD.postman_collection.json` file in Postman.
+- Run the `npm install` commands for installing the node packages. 
 
 ## Project Run Commands
 
-- `npm install`
-- `npm start`
+- `npm start` It will create a build and start listing the server.
 
 ## Key Topics
 
 The following topics covered in this unit:
 
 - User and Product CRUD with MongoDB
+- Monolithic architecture
 - User SignUp and Login
-- Request method like Get, Post, Put, Delete
+- Request method like Get, Post, Put, Patch, Delete
 - JWT authorization and authentication
 - Joi validation
 - Winston error and info loggers
@@ -49,4 +53,3 @@ The following topics covered in this unit:
 ---
 
 © 2024 <a href="https://rajneshwar.com/">Rajneshwar Singh</a>
-
